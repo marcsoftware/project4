@@ -8,27 +8,41 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'learn';
 
+  question :string;
+  feedback :any;
+
    dict={
-    'a':'あ ',
-    'ka':'か ',
-    'sa':'さ ',
-    'ta':'た ',
-    'na':'な ',
-    'ha':'は ',
-    'ma':'ま ',
-    'ya':'や ',
-    'ra':'ら ',
-    'wa':'わ ',
-    'ga':'が ',
-    'za':'ざ ',
-    'da':'だ ',
-    'ba':'ば ',
+    'a':'あ',
+    'ka':'か',
+    'sa':'さ',
+    'ta':'た',
+    'na':'な',
+    'ha':'は',
+    'ma':'ま',
+    'ya':'や',
+    'ra':'ら',
+    'wa':'わ',
+    'ga':'が',
+    'za':'ざ',
+    'da':'だ',
+    'ba':'ば',
     'pa':'ぱ'
 
   }
 
-  checkInput(){
-    console.log(1);
+
+  ngOnInit() {
+      this.drawQuestion();
+  }
+
+  drawQuestion(){
+
+    this.question='あ';
+  }
+  checkInput(event: any){
+    let user_input=event.target.value;
+    this.feedback=this.dict[user_input]===this.question;
+
   }
 
 }
