@@ -1,3 +1,10 @@
+## how to download and run
+git clone https://github.com/marcsoftware/project4.git
+npm install
+ng serve -o
+
+
+
 # Learn
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.1.
