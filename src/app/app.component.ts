@@ -12,6 +12,9 @@ export class AppComponent {
   feedback :any;
   problem_set =[];
   page=[];
+  count=0;
+  before;
+  after;
    dict={
     'a':'あ',
     'ka':'か',
@@ -40,14 +43,21 @@ export class AppComponent {
 
   //displays question to user
   drawQuestion(){
-
-    this.question='あ';
+    this.before=(this.page.slice(0,this.count+1)).join('<br/>');
+    this.after=(this.page.slice(this.count+1)).join('<br/>');
+    this.question=this.problem_set[this.count];
   }
 
   //check users input, and five user right/wrong feedback
   checkInput(event: any){
     let user_input=event.target.value;
     this.feedback=this.dict[user_input]===this.question;
+    if(this.feedback){
+      this.feedback='';
+      this.count++;
+      event.target.value='';
+      this.drawQuestion();
+    }
   }
 
   // creates page
@@ -61,12 +71,11 @@ export class AppComponent {
   // extract all question from dictionary for easier manipulation by programmer
   getAllQuestions(){
 
-    for(var key in this.dict) {
-        var value = this.dict[key];
-       this.problem_set.push(value);
+      for(var key in this.dict) {
+          var value = this.dict[key];
+        this.problem_set.push(value);
 
-    }
-
+      }
 
   }
 
