@@ -5,9 +5,11 @@
 </div>
 
 <div [innerHTML]="before"></div>
-
+<div [innerHTML]="now" id='now'></div>
 <input (keyup)="checkInput($event)" />{{feedback}}
+
 <div [innerHTML]="after"></div>
 {{count}}
+{{ans_key}}
 
 

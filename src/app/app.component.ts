@@ -15,6 +15,9 @@ export class AppComponent {
   count=0;
   before;
   after;
+  now;
+  ans_key;
+
    dict={
     'a':'あ',
     'ka':'か',
@@ -43,9 +46,11 @@ export class AppComponent {
 
   //displays question to user
   drawQuestion(){
-    this.before=(this.page.slice(0,this.count+1)).join('<br/>');
+    this.before=(this.page.slice(0,this.count)).join('<br/>');
+    this.now=this.page[this.count];
     this.after=(this.page.slice(this.count+1)).join('<br/>');
     this.question=this.problem_set[this.count];
+    this.ans_key=this.dict[this.question];
   }
 
   //check users input, and five user right/wrong feedback
