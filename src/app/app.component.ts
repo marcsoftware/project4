@@ -17,6 +17,7 @@ export class AppComponent {
   after;
   now;
   ans_key;
+  page_count=0;
 
    dict={
           'あ':'a',
@@ -104,6 +105,7 @@ export class AppComponent {
   }
 
   //displays question to user
+  //renders stuff on screen
   drawQuestion(){
     this.before=(this.page.slice(0,this.count)).join('<br/>');
     this.now=this.page[this.count];
@@ -117,11 +119,22 @@ export class AppComponent {
     let user_input=event.target.value;
     this.feedback=this.dict[this.question]===user_input;
     if(this.feedback){
+      this.correctInput(event);
+    }
+  }
+
+  //do this everytime user enter correct input
+  correctInput(event){
       this.feedback='';
       this.count++;
-      event.target.value='';
+      event.target.value=''; //clear the users input box
+
+      if(this.count>=this.page.length){
+        this.page_count++;
+        this.count=0;
+        this.createPage(this.page_count);
+      }
       this.drawQuestion();
-    }
   }
 
   // creates page
