@@ -142,16 +142,14 @@ export class AppComponent {
   // master before going to the next page.
   createPage(base: number=0){
     this.page=this.problem_set.slice(base,base+6);
-    console.log(this.page);
+    this.shufflePage();
+
   }
 
   shufflePage(){
-    this.shuffle(this.page);
+    this.page.sort(() => Math.random() - 0.5);
   }
 
-  shuffle(array) {
-    array.sort(() => Math.random() - 0.5);
-  }
 
   // extract all question from dictionary for easier manipulation by programmer
   getAllQuestions(){
