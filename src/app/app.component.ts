@@ -110,7 +110,7 @@ export class AppComponent {
     this.before=(this.page.slice(0,this.count)).join('<br/>');
     this.now=this.page[this.count];
     this.after=(this.page.slice(this.count+1)).join('<br/>');
-    this.question=this.problem_set[this.count];
+    this.question=this.page[this.count];
     this.ans_key=this.dict[this.question];
   }
 
@@ -130,7 +130,7 @@ export class AppComponent {
       event.target.value=''; //clear the users input box
 
       if(this.count>=this.page.length){
-        this.page_count++;
+        this.page_count+=6;
         this.count=0;
         this.createPage(this.page_count);
       }
