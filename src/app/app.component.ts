@@ -130,9 +130,9 @@ export class AppComponent {
       event.target.value=''; //clear the users input box
 
       if(this.count>=this.page.length){
-        this.page_count+=6;
+
         this.count=0;
-        this.createPage(this.page_count);
+        this.shufflePage();
       }
       this.drawQuestion();
   }
@@ -145,6 +145,14 @@ export class AppComponent {
     console.log(this.page);
   }
 
+  shufflePage(){
+    this.shuffle(this.page);
+  }
+
+  shuffle(array) {
+    array.sort(() => Math.random() - 0.5);
+  }
+
   // extract all question from dictionary for easier manipulation by programmer
   getAllQuestions(){
 
@@ -153,7 +161,11 @@ export class AppComponent {
         this.problem_set.push(key);
 
       }
+  }
 
+  nextPage(){
+    this.page_count++;
+    this.createPage(this.page_count*6);
   }
 
 }
