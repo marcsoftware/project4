@@ -115,7 +115,7 @@ export class AppComponent {
   //check users input, and five user right/wrong feedback
   checkInput(event: any){
     let user_input=event.target.value;
-    this.feedback=this.dict[user_input]===this.question;
+    this.feedback=this.dict[this.question]===user_input;
     if(this.feedback){
       this.feedback='';
       this.count++;
