@@ -113,6 +113,7 @@ export class AppComponent {
   // the page is a shorter list of question, that the user can
   // master before going to the next page.
   createPage(base: number=0){
+    console.log(base);
     this.page=this.problem_set.slice(base,base+6);
     this.shufflePage();
 
@@ -136,6 +137,7 @@ export class AppComponent {
   nextPage(){
     this.page_count++;
     this.createPage(this.page_count*6);
+    this.drawQuestion();
   }
 
 }
