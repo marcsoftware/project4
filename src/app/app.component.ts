@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'learn';
-
+  math = Math;// hack since angular does not recognize Math on the html page,
   question :string;
   feedback :any;
   problem_set =[];
@@ -18,7 +18,7 @@ export class AppComponent {
   now;
   ans_key;
   page_count=0;
-
+ page_length=6;
    dict={
     'あ':'a',
     'い':'i',
@@ -31,13 +31,13 @@ export class AppComponent {
     'け':'ke',
     'こ':'ko',
     'さ':'sa',
-    'し':'si/shi',
+    'し':'shi',
     'す':'su',
     'せ':'se',
     'そ':'so',
     'た':'ta',
-    'ち':'ti/chi',
-    'つ':'tu/tsu',
+    'ち':'chi',
+    'つ':'tsu',
     'て':'te',
     'と':'to',
     'な':'na',
@@ -47,7 +47,7 @@ export class AppComponent {
     'の':'no',
     'は':'ha',
     'ひ':'hi',
-    'ふ':'hu/fu',
+    'ふ':'fu',
     'へ':'he',
     'ほ':'ho',
     'ま':'ma',
@@ -136,7 +136,7 @@ export class AppComponent {
 
   nextPage(){
     this.page_count++;
-    this.createPage(this.page_count*6);
+    this.createPage(this.page_count*this.page_length);
     this.drawQuestion();
   }
 

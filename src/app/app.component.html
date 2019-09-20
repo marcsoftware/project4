@@ -9,7 +9,8 @@
 <input (keyup)="checkInput($event)" />{{feedback}}
 
 <div [innerHTML]="after"></div>
-{{count}}
-{{ans_key}}
+{{page_count+1}}/{{math.ceil(problem_set.length/page_length)}}
+
 <br/>
 <button (click)="nextPage()">next</button>
+<div id='hide' [innerHTML]="ans_key"></div>
