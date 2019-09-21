@@ -108,7 +108,27 @@ export class AppComponent {
     'ぽ':'po'
     }
 
-  dict=this.easy;
+    easy_words={
+      'そつおねをに':'sotsuonewoni',
+
+      'のらわあちほ':'norawaachiho',
+
+
+      'くふたみやり':'kufutamiyari',
+
+      'させえなすよ':'saseenasuyo',
+
+
+      'めひるこはぬ':'mehirukohanu',
+
+      'ろいうんんしも':'roiunnshimo',
+      'ゆまけとれへ':'yumaketorehe',
+      'きかてむ':'kikatemu'
+
+    }
+
+
+  dict=this.easy_words;
 
   ngOnInit() {
       this.getAllQuestions();
