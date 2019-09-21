@@ -182,7 +182,8 @@ export class AppComponent {
 
       }
 
-      this.problem_set=this.problem_set.reverse();
+      //this.problem_set=this.problem_set.reverse();
+      this.problem_set=this.problem_set.sort(() => Math.random() - 0.5);
   }
 
   nextPage(){
