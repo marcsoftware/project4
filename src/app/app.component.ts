@@ -19,6 +19,9 @@ export class AppComponent {
   ans_key;
   page_count=0;
  page_length=6;
+ image_template="../assets/mnemonic/NAME.PNG";
+ image="../assets/mnemonic/a.PNG";
+
    dict={
     'あ':'a',
     'い':'i',
@@ -84,6 +87,7 @@ export class AppComponent {
     this.after=(this.page.slice(this.count+1)).join('<br/>');
     this.question=this.page[this.count];
     this.ans_key=this.dict[this.question];
+    this.image = this.image_template.replace("NAME",this.ans_key);
   }
 
   //check users input, and five user right/wrong feedback
