@@ -23,7 +23,7 @@ export class AppComponent {
  image="../assets/mnemonic/a.PNG";
   auto_turn=true;
 
-   hirigana={
+   easy={
     'あ':'a',
     'い':'i',
     'う':'u',
@@ -73,7 +73,7 @@ export class AppComponent {
 
   }
 
-  dakutan={
+  hard={
     'k->':'g',
     'が':'ga',
     'ぎ':'gi',
@@ -108,7 +108,7 @@ export class AppComponent {
     'ぽ':'po'
     }
 
-  dict=this.dakutan;
+  dict=this.easy;
 
   ngOnInit() {
       this.getAllQuestions();
@@ -181,6 +181,8 @@ export class AppComponent {
         this.problem_set.push(key);
 
       }
+
+      this.problem_set=this.problem_set.reverse();
   }
 
   nextPage(){
