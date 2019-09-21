@@ -21,6 +21,7 @@ export class AppComponent {
  page_length=6;
  image_template="../assets/mnemonic/NAME.PNG";
  image="../assets/mnemonic/a.PNG";
+  auto_turn=true;
 
    dict={
     'あ':'a',
@@ -106,9 +107,13 @@ export class AppComponent {
       event.target.value=''; //clear the users input box
 
       if(this.count>=this.page.length){
+        if(this.auto_turn){
 
-        this.count=0;
-        this.shufflePage();
+          this.nextPage();
+        }else{
+          this.count=0;
+          this.shufflePage();
+        }
       }
       this.drawQuestion();
   }
@@ -127,6 +132,10 @@ export class AppComponent {
     this.page.sort(() => Math.random() - 0.5);
   }
 
+  settings(event: any){
+
+      this.auto_turn=event.target.checked;
+  }
 
   // extract all question from dictionary for easier manipulation by programmer
   getAllQuestions(){
@@ -139,6 +148,7 @@ export class AppComponent {
   }
 
   nextPage(){
+    this.count=0;
     this.page_count++;
     this.createPage(this.page_count*this.page_length);
     this.drawQuestion();
