@@ -23,7 +23,7 @@ export class AppComponent {
  image="../assets/mnemonic/a.PNG";
   auto_turn=true;
 
-   dict={
+   hirigana={
     'あ':'a',
     'い':'i',
     'う':'u',
@@ -73,6 +73,42 @@ export class AppComponent {
 
   }
 
+  dakutan={
+    'k->':'g',
+    'が':'ga',
+    'ぎ':'gi',
+    'ぐ':'gu',
+    'げ':'ge',
+    'ご':'go',
+
+    's->':'z',
+    'ざ':'za',
+    'じ':'ji',
+    'ず':'zu',
+    'ぜ':'ze',
+    'ぞ':'zo',
+
+    't->':'d',
+    'だ':'da',
+    'ぢ':'dji',
+    'づ':'dzu',
+    'で':'de',
+    'ど':'do',
+
+    'ば':'ba',
+    'び':'bi',
+    'ぶ':'bu',
+    'べ':'be',
+    'ぼ':'bo',
+
+    'ぱ':'pa',
+    'ぴ':'pi',
+    'ぷ':'pu',
+    'ぺ':'pe',
+    'ぽ':'po'
+    }
+
+  dict=this.dakutan;
 
   ngOnInit() {
       this.getAllQuestions();
