@@ -77,7 +77,7 @@ auto_turn=true;
 
 }
 
-hard={
+hard_vowel={
   'k″ 🠺':'g',
   'が':'ga',
   'ぎ':'gi',
@@ -114,7 +114,7 @@ hard={
   'ぽ':'po'
   }
 
-  easy_words={
+  words={
     'そつおねをに':'sotsuonewoni',
 
     'のらわあちほ':'norawaachiho',
@@ -134,7 +134,7 @@ hard={
   }
 
 
-  dakatan_hard={
+  hard_consonant={
 
 
     'が':'ga',
@@ -164,11 +164,20 @@ hard={
     'ぽ':'po'
     }
 
-dict=this.dakatan_hard;
+dict;
 
 
   ngOnInit() {
     this.subject = this.route.snapshot.paramMap.get("subject");
+    if(this.subject=='hard_v'){
+        this.dict=this.hard_vowel;
+    }else if(this.subject=='hard_c'){
+      this.dict=this.hard_consonant;
+    }else if(this.subject=='words'){
+      this.dict=this.words;
+    }else {
+      this.dict=this.easy;
+    }
 
     this.getAllQuestions();
     this.createPage();
