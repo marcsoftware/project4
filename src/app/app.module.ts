@@ -7,7 +7,7 @@ import { TypeComponent } from './type/type.component';
 
 
 const appRoutes: Routes = [
-  { path: 'test', component: TypeComponent },
+  { path: 'animal/:animal', component: TypeComponent },
 
 ];
 
