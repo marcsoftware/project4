@@ -18,7 +18,7 @@ export class AppComponent {
   now;
   ans_key;
   page_count=0;
- page_length=6;
+ page_length=5;
  image_template="../assets/mnemonic/NAME.PNG";
  image="../assets/mnemonic/a.PNG";
   auto_turn=true;
@@ -211,7 +211,7 @@ export class AppComponent {
   // master before going to the next page.
   createPage(base: number=0){
     console.log(base);
-    this.page=this.problem_set.slice(base,base+6);
+    this.page=this.problem_set.slice(base,base+this.page_length);
     this.shufflePage();
 
   }
