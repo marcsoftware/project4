@@ -74,33 +74,35 @@ export class AppComponent {
   }
 
   hard={
-    'k->':'g',
+    'k″ 🠺':'g',
     'が':'ga',
     'ぎ':'gi',
     'ぐ':'gu',
     'げ':'ge',
     'ご':'go',
 
-    's->':'z',
+    's˺˺🠺':'z',
     'ざ':'za',
     'じ':'ji',
     'ず':'zu',
     'ぜ':'ze',
     'ぞ':'zo',
 
-    't->':'d',
+    't˺˺🠺':'d',
     'だ':'da',
     'ぢ':'dji',
     'づ':'dzu',
     'で':'de',
     'ど':'do',
 
+    'h˺˺🠺':'b',
     'ば':'ba',
     'び':'bi',
     'ぶ':'bu',
     'べ':'be',
     'ぼ':'bo',
 
+    'h° 🠺':'p',
     'ぱ':'pa',
     'ぴ':'pi',
     'ぷ':'pu',
@@ -128,7 +130,37 @@ export class AppComponent {
     }
 
 
-  dict=this.easy_words;
+    dakatan_hard={
+
+
+      'が':'ga',
+      'ざ':'za',
+      'だ':'da',
+      'ば':'ba',
+      'ぱ':'pa',
+      'ぎ':'gi',
+      'じ':'ji',
+      'ぢ':'dji',
+      'び':'bi',
+      'ぴ':'pi',
+      'ぐ':'gu',
+      'ず':'zu',
+      'づ':'dzu',
+      'ぶ':'bu',
+      'ぷ':'pu',
+      'げ':'ge',
+      'ぜ':'ze',
+      'で':'de',
+      'べ':'be',
+      'ぺ':'pe',
+      'ご':'go',
+      'ぞ':'zo',
+      'ど':'do',
+      'ぼ':'bo',
+      'ぽ':'po'
+      }
+
+  dict=this.dakatan_hard;
 
   ngOnInit() {
       this.getAllQuestions();
@@ -203,7 +235,7 @@ export class AppComponent {
       }
 
       //this.problem_set=this.problem_set.reverse();
-      this.problem_set=this.problem_set.sort(() => Math.random() - 0.5);
+      //this.problem_set=this.problem_set.sort(() => Math.random() - 0.5);
   }
 
   nextPage(){
