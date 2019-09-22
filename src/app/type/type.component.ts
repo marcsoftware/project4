@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./type.component.css']
 })
 export class TypeComponent implements OnInit {
-
+animal='did not do anything';
   constructor() { }
 
   ngOnInit() {
