@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-type',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TypeComponent implements OnInit {
 animal='did not do anything';
-  constructor() { }
+constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.animal = this.route.snapshot.paramMap.get("animal")
   }
 
 }
