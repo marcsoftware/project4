@@ -1,21 +1,3 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <router-outlet></router-outlet>
-<div style="text-align:center">
-
-
-</div>
-
-<div [innerHTML]="before"></div>
-<div [innerHTML]="now" id='now'></div>
-<input (keyup)="checkInput($event)" />{{feedback}}
-
-<div [innerHTML]="after"></div>
-{{page_count+1}}/{{math.ceil(problem_set.length/page_length)}}
-
-<br/>
-<button (click)="nextPage()">next</button>
-<input type="checkbox" checked name="auto_turn" value="auto_turn" (change)='settings($event)'>auto<br>
-<div id='hide' [innerHTML]="ans_key"></div>
-
-
-<img [src]="image">
+this is app compnent

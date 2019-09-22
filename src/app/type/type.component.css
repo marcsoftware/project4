@@ -1,0 +1,23 @@
+#now{
+  color:red;
+  display: inline;
+  padding-right:10px;
+}
+
+div{
+  font-size:30px;
+}
+
+#hide{
+  font-size:6px;
+}
+
+img{
+ width: 30%;
+ float:right;
+
+}
+
+img:hover{
+  width:15%;
+}
