@@ -7,7 +7,7 @@ import { ActivatedRoute } from "@angular/router";
   styleUrls: ['./type.component.css']
 })
 export class TypeComponent implements OnInit {
-animal='did not do anything';
+subject;
 constructor(private route: ActivatedRoute) { }
 
 title = 'learn';
@@ -168,7 +168,7 @@ dict=this.dakatan_hard;
 
 
   ngOnInit() {
-    this.animal = this.route.snapshot.paramMap.get("animal");
+    this.subject = this.route.snapshot.paramMap.get("subject");
 
     this.getAllQuestions();
     this.createPage();
