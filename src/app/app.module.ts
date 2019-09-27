@@ -4,10 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { TypeComponent } from './type/type.component';
+import { HomeComponent } from './home/home.component';
 
 
 const appRoutes: Routes = [
   { path: 'subject/:subject', component: TypeComponent },
+  { path: '', component: HomeComponent },
 
 ];
 
@@ -16,7 +18,8 @@ const appRoutes: Routes = [
   declarations: [
 
     AppComponent,
-    TypeComponent
+    TypeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
