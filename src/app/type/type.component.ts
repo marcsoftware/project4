@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
 
+import data from '../../data/japanese.json';
+
 @Component({
   selector: 'app-type',
   templateUrl: './type.component.html',
@@ -176,7 +178,8 @@ dict;
     }else if(this.subject=='words'){
       this.dict=this.words;
     }else {
-      this.dict=this.easy;
+      this.dict=data.easy;
+
     }
 
     this.getAllQuestions();
