@@ -28,155 +28,17 @@ page_length=5;
 image_template="../../assets/mnemonic/NAME.PNG";
 image="../assets/mnemonic/a.PNG";
 auto_turn=true;
-
- easy={
-  'あ':'a',
-  'い':'i',
-  'う':'u',
-  'え':'e',
-  'お':'o',
-  'か':'ka',
-  'き':'ki',
-  'く':'ku',
-  'け':'ke',
-  'こ':'ko',
-  'さ':'sa',
-  'し':'shi',
-  'す':'su',
-  'せ':'se',
-  'そ':'so',
-  'た':'ta',
-  'ち':'chi',
-  'つ':'tsu',
-  'て':'te',
-  'と':'to',
-  'な':'na',
-  'に':'ni',
-  'ぬ':'nu',
-  'ね':'ne',
-  'の':'no',
-  'は':'ha',
-  'ひ':'hi',
-  'ふ':'fu',
-  'へ':'he',
-  'ほ':'ho',
-  'ま':'ma',
-  'み':'mi',
-  'む':'mu',
-  'め':'me',
-  'も':'mo',
-  'や':'ya',
-  'ゆ':'yu',
-  'よ':'yo',
-  'ら':'ra',
-  'り':'ri',
-  'る':'ru',
-  'れ':'re',
-  'ろ':'ro',
-  'わ':'wa',
-  'を':'wo',
-  'ん':'nn',
-
-}
-
-hard_vowel={
-  'k″ 🠺':'g',
-  'が':'ga',
-  'ぎ':'gi',
-  'ぐ':'gu',
-  'げ':'ge',
-  'ご':'go',
-
-  's˺˺🠺':'z',
-  'ざ':'za',
-  'じ':'ji',
-  'ず':'zu',
-  'ぜ':'ze',
-  'ぞ':'zo',
-
-  't˺˺🠺':'d',
-  'だ':'da',
-  'ぢ':'dji',
-  'づ':'dzu',
-  'で':'de',
-  'ど':'do',
-
-  'h˺˺🠺':'b',
-  'ば':'ba',
-  'び':'bi',
-  'ぶ':'bu',
-  'べ':'be',
-  'ぼ':'bo',
-
-  'h° 🠺':'p',
-  'ぱ':'pa',
-  'ぴ':'pi',
-  'ぷ':'pu',
-  'ぺ':'pe',
-  'ぽ':'po'
-  }
-
-  words={
-    'そつおねをに':'sotsuonewoni',
-
-    'のらわあちほ':'norawaachiho',
-
-
-    'くふたみやり':'kufutamiyari',
-
-    'させえなすよ':'saseenasuyo',
-
-
-    'めひるこはぬ':'mehirukohanu',
-
-    'ろいうんんしも':'roiunnshimo',
-    'ゆまけとれへ':'yumaketorehe',
-    'きかてむ':'kikatemu'
-
-  }
-
-
-  hard_consonant={
-
-
-    'が':'ga',
-    'ざ':'za',
-    'だ':'da',
-    'ば':'ba',
-    'ぱ':'pa',
-    'ぎ':'gi',
-    'じ':'ji',
-    'ぢ':'dji',
-    'び':'bi',
-    'ぴ':'pi',
-    'ぐ':'gu',
-    'ず':'zu',
-    'づ':'dzu',
-    'ぶ':'bu',
-    'ぷ':'pu',
-    'げ':'ge',
-    'ぜ':'ze',
-    'で':'de',
-    'べ':'be',
-    'ぺ':'pe',
-    'ご':'go',
-    'ぞ':'zo',
-    'ど':'do',
-    'ぼ':'bo',
-    'ぽ':'po'
-    }
-
 dict;
 
 
   ngOnInit() {
     this.subject = this.route.snapshot.paramMap.get("subject");
     if(this.subject=='hard_v'){
-        this.dict=this.hard_vowel;
+        this.dict=data.hard_v;
     }else if(this.subject=='hard_c'){
-      this.dict=this.hard_consonant;
+      this.dict=data.hard_c;
     }else if(this.subject=='words'){
-      this.dict=this.words;
+      this.dict=data.easy_words;
     }else {
       this.dict=data.easy;
 

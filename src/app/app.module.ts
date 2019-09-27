@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { TypeComponent } from './type/type.component';
 import { HomeComponent } from './home/home.component';
 
-import data from './japanese.json';
+
 
 const appRoutes: Routes = [
   { path: 'subject/:subject', component: TypeComponent },
