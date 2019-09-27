@@ -8,6 +8,7 @@ import data from '../../data/japanese.json';
   templateUrl: './type.component.html',
   styleUrls: ['./type.component.css']
 })
+
 export class TypeComponent implements OnInit {
 subject;
 constructor(private route: ActivatedRoute) { }
