@@ -3,10 +3,10 @@
 
 <!--The content below is only a placeholder and can be replaced.-->
 
-<div style="text-align:center">
+<div id='main'>
 
 
-</div>
+
 
 <div [innerHTML]="before"></div>
 <div [innerHTML]="now" id='now'></div>
@@ -19,6 +19,6 @@
 <button (click)="nextPage()">next</button>
 <input type="checkbox" checked name="auto_turn" value="auto_turn" (change)='settings($event)'>auto<br>
 <div id='hide' [innerHTML]="ans_key"></div>
-
+</div>
 
 <img [src]="image">

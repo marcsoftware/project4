@@ -6,6 +6,15 @@
 
 div{
   font-size:30px;
+
+}
+
+#main{
+  width:30%;
+  margin:auto;
+  text-align: left;
+
+  float:left;
 }
 
 #hide{
@@ -13,7 +22,7 @@ div{
 }
 
 img{
- width: 30%;
+ width: 15%;
  float:right;
 
 }
