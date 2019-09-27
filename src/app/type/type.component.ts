@@ -33,15 +33,11 @@ dict;
 
   ngOnInit() {
     this.subject = this.route.snapshot.paramMap.get("subject");
-    if(this.subject=='hard_v'){
-        this.dict=data.hard_v;
-    }else if(this.subject=='hard_c'){
-      this.dict=data.hard_c;
-    }else if(this.subject=='words'){
-      this.dict=data.easy_words;
-    }else {
-      this.dict=data.easy;
 
+    if(!this.subject){
+      this.dict=data[this.subject];
+    }else{
+      this.dict=data['easy'];
     }
 
     this.getAllQuestions();
