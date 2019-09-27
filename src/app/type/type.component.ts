@@ -34,7 +34,7 @@ dict;
   ngOnInit() {
     this.subject = this.route.snapshot.paramMap.get("subject");
 
-    if(!this.subject){
+    if(this.subject){
       this.dict=data[this.subject];
     }else{
       this.dict=data['easy'];
