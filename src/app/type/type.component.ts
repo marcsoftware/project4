@@ -28,7 +28,7 @@ page_count=0;
 page_length=5;
 image_template="../../assets/mnemonic/NAME.PNG";
 image="../assets/mnemonic/a.PNG";
-auto_turn=true;
+auto_turn=false;
 dict;
 
 
