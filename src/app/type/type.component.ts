@@ -62,7 +62,7 @@ dict;
   //check users input, and five user right/wrong feedback
   checkInput(event: any){
     let user_input=event.target.value;
-    this.feedback=this.dict[this.question]===user_input;
+    this.feedback=this.ans_key===user_input;
     if(this.feedback){
       this.correctInput(event);
     }
