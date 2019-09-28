@@ -54,7 +54,9 @@ dict;
     this.after=(this.page.slice(this.count+1)).join('<br/>');
     this.question=this.page[this.count];
     this.ans_key=this.dict[this.question];
-    this.image = this.image_template.replace("NAME",this.ans_key);
+    let image_name = this.ans_key.replace(/\,.*/g,'');
+    this.ans_key=image_name; //TODO delete the alternative answeres !?
+    this.image = this.image_template.replace("NAME",image_name);
   }
 
   //check users input, and five user right/wrong feedback
