@@ -169,6 +169,16 @@
       "いった":"itta",
       "いしょ":"isho",
       "いっしょ":"issho"
+    },
+
+    "radicals":{
+        "用": "use",
+        "矛": "spear,pike",
+        "王": "king",
+        "瓦": "tile",
+        "示": "altar,display",
+        "瓜": "melon"
+
     }
 
 
