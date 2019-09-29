@@ -139,6 +139,13 @@ dict;
     this.drawQuestion();
   }
 
+  prevPage(){
+    this.count=0;
+    this.page_count--;
+    this.createPage(this.page_count*this.page_length);
+    this.drawQuestion();
+  }
+
 }
 
 

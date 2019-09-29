@@ -16,6 +16,7 @@
 {{page_count+1}}/{{math.ceil(problem_set.length/page_length)}}
 
 <br/>
+<button (click)="prevPage()">prev</button>
 <button (click)="nextPage()">next</button>
 <input type="checkbox" name="auto_turn" value="auto_turn" (change)='settings($event)'>auto<br>
 
