@@ -45,6 +45,11 @@ dict;
     if(this.subject==='radicals'){
       this.image_template="../../assets/words/NAME.png";
     }
+
+    if(this.subject==='radicals2'){
+      this.image_template="../../assets/words/NAME.png";
+    }
+
     this.getAllQuestions();
     this.createPage();
     this.drawQuestion();
