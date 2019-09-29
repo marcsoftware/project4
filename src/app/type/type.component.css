@@ -12,6 +12,10 @@ div{
 #readable{
   color: yellow;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+  position: absolute;
+  top: 8px;
+  left: 16px;
 }
 
 #main{
@@ -35,6 +39,11 @@ img{
 #right{
   width:25%;
   float:right;
+
+  position: relative;
+  text-align: center;
+  color: white;
+
 }
 
 img:hover{
