@@ -63,7 +63,14 @@ dict;
     this.after=(this.page.slice(this.count+1)).join('<br/>');
     this.question=this.page[this.count];
     this.ans_key=this.dict[this.question];
-    let image_name = this.ans_key.replace(/[\W].*/g,'');
+
+    // JSON data is in different format for RADICALS, so this if-else handles that exception
+    let image_name;
+    if(typeof this.ans_key === "string"){
+       image_name = this.ans_key.replace(/[\W].*/g,'');
+    }else{
+       image_name = this.ans_key[0].replace(/[\W].*/g,'');
+    }
     this.ans_key=image_name; //TODO delete the alternative answeres !?
     this.image = this.image_template.replace("NAME",image_name);
   }
