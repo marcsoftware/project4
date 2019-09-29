@@ -52,6 +52,7 @@ dict;
 
   //displays question to user
   //renders stuff on screen
+  image_name;
   drawQuestion(){
     this.before=(this.page.slice(0,this.count)).join('<br/>');
     this.now=this.page[this.count];
@@ -60,16 +61,16 @@ dict;
     this.ans_key=this.dict[this.question];
 
     // JSON data is in different format for RADICALS, so this if-else handles that exception
-    let image_name;
+
     if(typeof this.ans_key === "string"){
-       image_name = this.ans_key.replace(/[\W].*/g,'');
-       this.ans_key=image_name;
+       this.image_name = this.ans_key.replace(/[\W].*/g,'');
+       this.ans_key=this.image_name;
     }else{
-       image_name = this.ans_key[2];
-       this.ans_key= this.ans_key[0].replace(/[\W].*/g,'');;
+       this.image_name = this.ans_key[2];
+       this.ans_key= this.ans_key[0].replace(/[^a-z\ ].*/gi,'');
     }
      //TODO delete the alternative answeres !?
-    this.image = this.image_template.replace("NAME",image_name);
+    this.image = this.image_template.replace("NAME",this.image_name);
   }
 
   //check users input, and five user right/wrong feedback
