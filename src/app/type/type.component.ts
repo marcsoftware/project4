@@ -110,14 +110,35 @@ dict;
 
   }
 
+  //------------------------------------------------------------------
+  //
+  //-------------------------------------------------------------------
   shufflePage(){
     this.page.sort(() => Math.random() - 0.5);
   }
 
+
+  //------------------------------------------------------------------
+  //
+  //-------------------------------------------------------------------
   settings(event: any){
 
       this.auto_turn=event.target.checked;
   }
+
+  //------------------------------------------------------------------
+  //
+  //-------------------------------------------------------------------
+  hide_image=false;
+  settingsImage(event: any){
+
+    this.hide_image=event.target.checked;
+    if(this.hide_image){
+      document.getElementById('image').style.visibility='hidden';
+    }else{
+      document.getElementById('image').style.visibility='visible';
+    }
+}
 
   // extract all question from dictionary for easier manipulation by programmer
   getAllQuestions(){

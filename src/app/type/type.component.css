@@ -25,7 +25,7 @@ div{
 
 .unreadable{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size:5px;
+  font-size:8px;
 }
 
 .up{
@@ -60,6 +60,8 @@ img{
  width: 100%;
 
 
+
+
 }
 
 #right{
@@ -72,6 +74,3 @@ img{
 
 }
 
-img:hover{
-  width:15%;
-}

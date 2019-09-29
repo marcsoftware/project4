@@ -19,11 +19,12 @@
 <button (click)="prevPage()">prev</button>
 <button (click)="nextPage()">next</button>
 <input type="checkbox" name="auto_turn" value="auto_turn" (change)='settings($event)'>auto<br>
+<input type="checkbox" name="image" value="image" (change)='settingsImage($event)'>image<br>
 
 </div>
 
 <div id='right'>
-  <img [src]="image">
+  <img [src]="image" id='image'>
 
   <div class='readable down' [innerHTML]="now"></div>
 </div>
