@@ -146,8 +146,8 @@ dict;
   getAllQuestions(){
 
       for(var key in this.dict) {
-
-        this.problem_set.push(key.replace(/\(.*/g,'')  );
+        this.problem_set.push(key );
+        //this.problem_set.push(key.replace(/\(.*/g,'')  );
 
       }
 
