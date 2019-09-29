@@ -41,6 +41,10 @@ dict;
       this.dict=data['easy'];
     }
 
+    //
+    if(this.subject==='radicals'){
+      this.image_template="../../assets/words/NAME.png";
+    }
     this.getAllQuestions();
     this.createPage();
     this.drawQuestion();
