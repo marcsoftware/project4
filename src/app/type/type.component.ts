@@ -41,13 +41,8 @@ dict;
       this.dict=data['easy'];
     }
 
-    //
     if(this.subject==='radicals'){
-      this.image_template="../../assets/words/NAME.png";
-    }
-
-    if(this.subject==='radicals2'){
-      this.image_template="../../assets/words/NAME.png";
+      this.image_template="../../assets/words/NAME";
     }
 
     this.getAllQuestions();
@@ -68,10 +63,12 @@ dict;
     let image_name;
     if(typeof this.ans_key === "string"){
        image_name = this.ans_key.replace(/[\W].*/g,'');
+       this.ans_key=image_name;
     }else{
-       image_name = this.ans_key[0].replace(/[\W].*/g,'');
+       image_name = this.ans_key[2];
+       this.ans_key= this.ans_key[0].replace(/[\W].*/g,'');;
     }
-    this.ans_key=image_name; //TODO delete the alternative answeres !?
+     //TODO delete the alternative answeres !?
     this.image = this.image_template.replace("NAME",image_name);
   }
 
