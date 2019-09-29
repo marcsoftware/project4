@@ -69,6 +69,8 @@ dict;
        this.image_name = this.ans_key[2];
        this.ans_key= this.ans_key[0].replace(/[^a-z\ ].*/gi,'');
     }
+
+
      //TODO delete the alternative answeres !?
     this.image = this.image_template.replace("NAME",this.image_name);
   }
@@ -145,7 +147,7 @@ dict;
 
       for(var key in this.dict) {
 
-        this.problem_set.push(key);
+        this.problem_set.push(key.replace(/\(.*/g,'')  );
 
       }
 
