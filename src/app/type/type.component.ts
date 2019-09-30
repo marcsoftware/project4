@@ -45,6 +45,10 @@ dict;
       this.image_template="../../assets/words/NAME";
     }
 
+    if(this.subject==='hard_v' || this.subject==='hard_c' ){
+      this.image_template="../../assets/mnemonic/rules.PNG";
+    }
+
     this.getAllQuestions();
     this.createPage();
     this.drawQuestion();
