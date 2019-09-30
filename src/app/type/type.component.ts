@@ -123,6 +123,14 @@ dict;
     this.page.sort(() => Math.random() - 0.5);
   }
 
+  //------------------------------------------------------------------
+  //
+  //-------------------------------------------------------------------
+  shuffleAll(){
+    this.problem_set.sort(() => Math.random() - 0.5);
+    this.createPage(this.page_count*this.page_length);
+    this.drawQuestion();
+  }
 
   //------------------------------------------------------------------
   //
@@ -151,7 +159,7 @@ dict;
 
       for(var key in this.dict) {
         this.problem_set.push(key );
-        //this.problem_set.push(key.replace(/\(.*/g,'')  );
+
 
       }
 
