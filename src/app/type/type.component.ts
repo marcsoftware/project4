@@ -109,10 +109,10 @@ dict;
         let perfect =true; // not one letter is incorrect
         for(let i=0;i<user_input.length;i++){
             if(user_input[i]===this.ans_key[i] && perfect){
-              list[i]=user_input[i];
+              list[i]=this.ans_key[i];
             }else{
               perfect =false;
-              badList[i]=user_input[i];
+              badList[i]=this.ans_key[i];
             }
         }
 
