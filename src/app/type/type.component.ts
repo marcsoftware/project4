@@ -68,7 +68,7 @@ dict;
     this.after=(this.page.slice(this.count+1)).join('<br/>');
     this.question=this.page[this.count];
     this.ans_key=this.dict[this.question];
-
+    this.playAudio();
     // JSON data is in different format for RADICALS, so this if-else handles that exception
 
     if(typeof this.ans_key === "string"){
