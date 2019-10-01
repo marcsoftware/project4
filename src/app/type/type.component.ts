@@ -159,9 +159,9 @@ dict;
   //-------------------------------------------------------------------
   playAudio(){
     let template = "../../assets/audio/NAME.wav";
-    //let filepath = template=template.replace("NAME",this.ans_key);
-    //let filepath = "../../assets/audio/melcher.wav"; // makes ERROR message , but might work if i plug in headphones
-    let filepath = "../../assets/audio/ああ.wav"; //
+    let filepath = template=template.replace("NAME",this.now);
+
+
     let audio = new Audio();
     audio.src = filepath;
     audio.load();
