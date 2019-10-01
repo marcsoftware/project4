@@ -111,6 +111,7 @@ dict;
             if(user_input[i]===this.ans_key[i] && perfect){
               list[i]=user_input[i];
             }else{
+              perfect =false;
               badList[i]=user_input[i];
             }
         }
