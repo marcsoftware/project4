@@ -17,6 +17,7 @@ title = 'learn';
 math = Math;// hack since angular does not recognize Math on the html page,
 question :string;
 feedback :any;
+moreFeedback:any;
 problem_set =[];
 page=[];
 count=0;
@@ -54,6 +55,10 @@ dict;
     this.drawQuestion();
   }
 
+
+//----------------------------------------------------------------
+//
+//----------------------------------------------------------------
   //displays question to user
   //renders stuff on screen
   image_name;
@@ -79,16 +84,45 @@ dict;
     this.image = this.image_template.replace("NAME",this.image_name);
   }
 
+  //------------------------------------------------------------------
+  //
+  //-------------------------------------------------------------------
   //check users input, and five user right/wrong feedback
   checkInput(event: any){
     let user_input=event.target.value;
-    this.feedback=this.ans_key.trim()===user_input.trim();
-    if(this.feedback){
+
+    if(this.ans_key.trim()===user_input.trim()){
       this.correctInput(event);
+    }else{
+      this.colorize(user_input);
     }
   }
 
-  //do this everytime user enter correct input
+
+  //------------------------------------------------------------
+  // takes user_input and gives colorized feedback
+  //------------------------------------------------------------
+  colorize(user_input:any){
+        this.feedback='';
+        let list=[];
+        let badList=[];
+        let perfect =true; // not one letter is incorrect
+        for(let i=0;i<user_input.length;i++){
+            if(user_input[i]===this.ans_key[i] && perfect){
+              list[i]=user_input[i];
+            }else{
+              badList[i]=user_input[i];
+            }
+        }
+
+        this.feedback=list.join('');
+        this.moreFeedback=badList.join('');
+  }
+
+
+  //------------------------------------------------------------
+  //
+  //------------------------------------------------------------
   correctInput(event){
       this.feedback='';
       this.count++;
@@ -106,6 +140,9 @@ dict;
       this.drawQuestion();
   }
 
+  //------------------------------------------------------------------
+  //
+  //-------------------------------------------------------------------
   // creates page
   // the page is a shorter list of question, that the user can
   // master before going to the next page.
@@ -171,6 +208,10 @@ dict;
     }
 }
 
+
+  //------------------------------------------------------------------
+  //
+  //-------------------------------------------------------------------
   // extract all question from dictionary for easier manipulation by programmer
   getAllQuestions(){
 
@@ -184,6 +225,10 @@ dict;
       //this.problem_set=this.problem_set.sort(() => Math.random() - 0.5);
   }
 
+
+  //------------------------------------------------------------------
+  //
+  //-------------------------------------------------------------------
   nextPage(){
     this.count=0;
     this.page_count++;
@@ -191,6 +236,9 @@ dict;
     this.drawQuestion();
   }
 
+  //------------------------------------------------------------------
+  //
+  //-------------------------------------------------------------------
   prevPage(){
     this.count=0;
     this.page_count--;
