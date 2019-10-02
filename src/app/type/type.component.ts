@@ -75,8 +75,12 @@ dict;
        this.image_name = this.ans_key.replace(/[\W].*/g,'');
        this.ans_key=this.image_name;
     }else{
-       this.image_name = this.ans_key[3];
-       this.ans_key= this.ans_key[0].replace(/[^a-z\ ].*/gi,'');
+
+      let key = this.ans_key[2];
+      let image_name= this.ans_key[3];
+       this.image_name = image_name;
+
+       this.ans_key= key.replace(/[^a-z\ ].*/gi,'');
     }
 
 
@@ -214,18 +218,12 @@ dict;
   //-------------------------------------------------------------------
   // extract all question from dictionary for easier manipulation by programmer
   getAllQuestions(){
-    if(this.subject !=='radicals'){
+
       for(var key in this.dict) {
         this.problem_set.push(key );
-      }
-    }else{
-      for(var key in this.dict) {
-        this.problem_set.push(key );
-        console.log(this.dict[key][1]);
-      }
 
+     }
 
-    }
       //this.problem_set=this.problem_set.reverse();
       //this.problem_set=this.problem_set.sort(() => Math.random() - 0.5);
   }
