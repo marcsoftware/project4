@@ -75,8 +75,10 @@ dict;
        this.image_name = this.ans_key.replace(/[\W].*/g,'');
        this.ans_key=this.image_name;
     }else{
-       this.image_name = this.ans_key[2];
-       this.ans_key= this.ans_key[0].replace(/[^a-z\ ].*/gi,'');
+       this.image_name = this.ans_key[3];
+     //  this.now=this.ans_key[1]; //set now to show hiriganga
+       this.ans_key= this.ans_key[0].replace(/[^a-z\ ].*/gi,''); //delete extranous stuff from ans_key
+
     }
 
 
@@ -148,7 +150,7 @@ dict;
   // the page is a shorter list of question, that the user can
   // master before going to the next page.
   createPage(base: number=0){
-    console.log(base);
+
     this.page=this.problem_set.slice(base,base+this.page_length);
     this.shufflePage();
 
@@ -166,7 +168,7 @@ dict;
     audio.src = filepath;
     audio.load();
     audio.play();
-    console.log(filepath);
+
   }
 
   //------------------------------------------------------------------
@@ -214,13 +216,18 @@ dict;
   //-------------------------------------------------------------------
   // extract all question from dictionary for easier manipulation by programmer
   getAllQuestions(){
-
+    if(this.subject !=='radicals'){
       for(var key in this.dict) {
         this.problem_set.push(key );
-
-
+      }
+    }else{
+      for(var key in this.dict) {
+        this.problem_set.push(key );
+        console.log(this.dict[key][1]);
       }
 
+
+    }
       //this.problem_set=this.problem_set.reverse();
       //this.problem_set=this.problem_set.sort(() => Math.random() - 0.5);
   }
