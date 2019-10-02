@@ -75,7 +75,7 @@ dict;
        this.image_name = this.ans_key.replace(/[\W].*/g,'');
        this.ans_key=this.image_name;
     }else{
-       this.image_name = this.ans_key[2];
+       this.image_name = this.ans_key[3];
        this.ans_key= this.ans_key[0].replace(/[^a-z\ ].*/gi,'');
     }
 
