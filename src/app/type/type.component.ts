@@ -42,7 +42,7 @@ dict;
       this.dict=data['easy'];
     }
 
-    if(this.subject==='radicals'){
+    if(this.subject==='radicals' || this.subject ==='vocab'){
       this.image_template="../../assets/words/NAME";
     }
 
@@ -76,13 +76,7 @@ dict;
        this.ans_key=this.image_name;
     }else{
        this.image_name = this.ans_key[3];
-<<<<<<< HEAD
-     //  this.now=this.ans_key[1]; //set now to show hiriganga
-       this.ans_key= this.ans_key[0].replace(/[^a-z\ ].*/gi,''); //delete extranous stuff from ans_key
-
-=======
        this.ans_key= this.ans_key[0].replace(/[^a-z\ ].*/gi,'');
->>>>>>> ef110548cd183da309bcb15113c2a7079f3863fd
     }
 
 
