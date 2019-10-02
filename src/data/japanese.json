@@ -196,8 +196,8 @@
     "おこる":"okoru",
     "おじ":"oji",
     "おちゃ":"ocha",
-    "おっと":"oっto",
-    "おとうと":"otōto",
+
+
     "おとこ":"otoko",
     "おとこのこ":"otokonoko",
     "おとこのひと":"otokonohito",
@@ -248,7 +248,7 @@
     "かむ":"kamu",
     "かも":"kamo",
     "かゆい":"kayui",
-    "かようび":"kayōbi",
+
     "から":"kara",
     "からい":"karai",
     "からす":"karasu",
@@ -257,7 +257,7 @@
     "かんごし":"kangoshi",
     "かんごふ":"kangofu",
     "かんじ":"kanji",
-    "かんぞう":"kanzō",
+
     "が":"ga",
     "がいこくご":"gaikokugo",
 
@@ -300,7 +300,7 @@
     "けいさつかん":"keisatsukan",
     "けいざい":"keizai",
     "けしゴム":"keshigomu",
-    "けっこん":"keっkon",
+
     "けむり":"kemuri",
     "ける":"keru",
     "けんちくか":"kenchikuka",
@@ -462,7 +462,7 @@
     "で":"de",
     "でかける":"dekakeru",
     "でも":"demo",
-    "でも-but":"demo-but",
+
     "でんき":"denki",
     "でんしゃ":"densha",
     "と":"to",
@@ -553,12 +553,12 @@
     "ひがし":"higashi",
     "ひくい":"hikui",
     "ひげ":"hige",
-    "ひこうき":"hikōki",
+
     "ひざ":"hiza",
     "ひじ":"hiji",
     "ひだり":"hidari",
     "ひつじ":"hitsuji",
-    "ひつよう":"hitsuyō",
+
     "ひと":"hito",
     "ひとつ":"hitotsu",
     "ひふ":"hifu",
@@ -583,7 +583,7 @@
     "ふるい":"furui",
     "ふん":"fun",
     "ぶた":"buta",
-    "ぶんぼうぐ":"bunbōgu",
+
     "へ":"he",
     "へいし":"heishi",
     "へび":"hebi",
@@ -625,7 +625,7 @@
     "みる":"miru",
     "むぎ":"mugi",
     "むく":"muku",
-    "むこう":"mukō",
+
     "むし":"mushi",
     "むずかしい":"muzukashii",
 
@@ -635,8 +635,8 @@
     "めい":"mei",
     "めがね":"megane",
     "も":"mo",
-    "もう":"mō",
-    "もくようび":"mokuyōbi",
+
+
     "もじ":"moji",
     "もつ":"motsu",
     "もも":"momo",
@@ -654,7 +654,7 @@
     "ゆき":"yuki",
     "ゆげ":"yuge",
     "ゆび":"yubi",
-    "ようび":"yōbi",
+
 
     "よむ":"yomu",
     "より":"yori",
@@ -678,33 +678,7 @@
     "わたし":"watashi",
     "わふく":"wafuku",
     "わらう":"warau",
-    "わるい":"warui",
-    "を":"wo",
-    "アイスクリ":"aisukuri",
-
-    "イカ":"ika",
-    "インク":"inku",
-    "インチ":"inchi",
-    "エスカレ":"esukare",
-    "エレベ":"erebe",
-    "エンジニア":"enjinia",
-
-    "オレンジ":"orenji",
-    "カ":"ka",
-    "カタカナ":"katakana",
-    "カタツムリ":"katatsumuri",
-    "カバ":"kaba",
-    "ガ":"ga",
-    "ガス":"gasu",
-    "キリン":"kirin",
-    "キロ":"kiro",
-    "クモ":"kumo",
-    "クリ":"kuri",
-    "グラム":"guramu",
-    "コ":"ko",
-    "ゴキブリ":"gokiburi",
-    "サラダ":"sarada"
-
+    "わるい":"warui"
 
   },
 
