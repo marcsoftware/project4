@@ -76,7 +76,7 @@ dict;
        this.ans_key=this.image_name;
     }else{
 
-      let key = this.ans_key[2];
+      let key = this.ans_key[0];
       let image_name= this.ans_key[3];
        this.image_name = image_name;
 
