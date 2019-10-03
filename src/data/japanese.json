@@ -1125,6 +1125,7 @@
 
     "poem_words":{
       "あめ":"ame",
+      "けっして":"kesshite",
 "に":"ni",
 "も":"mo",
 "まけず":"makezu",
@@ -1141,11 +1142,11 @@
 "よく":"yoku",
 "は":"ha",
 "なく":"naku",
-"けっして":"keっshite",
+
 "らず":"razu",
 "いつも":"itsumo",
 "しずか":"shizuka",
-"わらっている":"waraっteiru",
+"わらっている":"waratteiru",
 "いち":"ichi",
 "にち":"nichi",
 "げんまい":"genmai",
@@ -1179,7 +1180,7 @@
 "ひがし":"higashi",
 "びょうき":"byooki",
 "こども":"kodomo",
-"おこなって":"okonaっte",
+"おこなって":"okonatte",
 "かんびょうしてやり":"kanbyooshiteyari",
 "にし":"nishi",
 "つかれた":"tsukareta",
@@ -1222,8 +1223,42 @@
 "そういう":"sooiu",
 "もの":"mono",
 "わたし":"watashi",
-"なりたい ":"naritai "
+"なりたい ":"naritai"
 
+    },
+
+
+    "poem_lines":{
+      "あめ に も まけず ":"ame ni mo makezu",
+"かぜ に も まけず ":"kaze ni mo makezu",
+"ゆき に も なつ の あつさ に も まけぬ ":"yuki ni mo natsu no atsusa ni mo makenu",
+"じょうぶな からだ を もち ":"joobu na karada wo mochi",
+"よく は なく ":"yoku wa naku",
+"けっして らず ":"kesshite ikarazu",
+"いつも しずか に わらっている ":"itsu mo shizuka ni waratte iru",
+"いち にち に げんまい よん ごう と ":"ichi nichi ni genmai yon goo to",
+"みそ と すこし の やさい を たべ ":"miso to sukoshi no yasai wo tabe",
+"あらゆる こと を ":"arayuru koto wo",
+"じ ぶん を かんじょう に いれず に ":"jibun wo kanjoo ni irezu ni",
+"よく みき きし わかり ":"yoku mikiki shi wakari",
+"そして わすれず ":"soshite wasurezu",
+"のはら の まつ の はやし の かげ の ":"nohara no matsu no hayashi no kage no",
+"ちいさな かや ぶ き の こや に いて ":"chiisa na kayabuki no koya ni ite",
+"ひがし に びょうき の こども あれば ":"higashi ni byōki no kodomo areba",
+"おこなって かんびょうしてやり ":"itte kanbyoo shite yari",
+"にし に つかれた はは あれば ":"nishi ni tsukareta haha areba",
+"おこなって その いね の たば を おい ":"itte sono ine no taba wo oi",
+"みなみ に しにそう な ひと あれば ":"minami ni shinisoo na hito areba",
+"おこなって こわがらなくて も いい と いい ":"itte kowagaranakute mo ii to ii",
+"きた に けんか や そ しょうが あれば ":"kita ni kenka ya soshoo ga areba",
+"つまらない から やめろ と いい ":"tsumaranai kara yamero to ii",
+"ひで り の とき はなみ だ を ながし ":"hideri no toki wa namida wo nagashi",
+"さむさ の なつ は おろおろ ある き ":"samusa no natsu wa oro-oro aruki",
+"みんな に でく の ぼう と よばれ ":"minna ni deku no bo to yobare",
+"ほめられ も せず ":"homerare mo sezu",
+"くに も されず ":"ku ni mo sarezu",
+"そういう もの に ":"soo iu mono ni",
+"わたし は なりたい ":"watashi wa naritai "
     }
 
 }
