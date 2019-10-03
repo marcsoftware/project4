@@ -72,7 +72,7 @@ dict;
     // JSON data is in different format for RADICALS, so this if-else handles that exception
 
     if(typeof this.ans_key === "string"){
-       this.image_name = this.ans_key.replace(/[\W].*/g,'');
+       this.image_name = this.ans_key.replace(/[\,].*/g,'');
        this.ans_key=this.image_name;
     }else{
 
@@ -116,7 +116,11 @@ dict;
               list[i]=this.ans_key[i];
             }else{
               perfect =false;
-              badList[i]=this.ans_key[i];
+              if(this.ans_key[i]===' '){
+                badList[i]='_';
+              }else{
+                badList[i]=this.ans_key[i];
+              }
             }
         }
 
@@ -163,7 +167,7 @@ dict;
   //-------------------------------------------------------------------
   playAudio(){
     let template = "../../assets/audio/NAME.wav";
-    let filepath = template=template.replace("NAME",this.now);
+    let filepath = template=template.replace("NAME",this.now.replace(/\ /g,'.'));
 
 
     let audio = new Audio();
