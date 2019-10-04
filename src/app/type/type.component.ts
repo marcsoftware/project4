@@ -165,9 +165,10 @@ dict;
   //------------------------------------------------------------------
   //
   //-------------------------------------------------------------------
+
   playAudio(){
     let template = "../../assets/audio/NAME.wav";
-    let filepath = template=template.replace("NAME",this.now.replace(/\ /g,'.'));
+    let filepath = template=template.replace("NAME",this.now.trim().replace(/\ /g,'.'));
 
 
     let audio = new Audio();
