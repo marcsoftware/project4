@@ -8,11 +8,11 @@
 
 
 
-<div [innerHTML]="before"></div>
+<div [innerHTML]="before" class='hide'></div>
 <div [innerHTML]="now" id='now'></div>
-<input (keyup)="checkInput($event)" />{{feedback}}<span>{{moreFeedback}}</span>
+<input (keyup)="checkInput($event)" />
 
-<div [innerHTML]="after"></div>
+<div [innerHTML]="after" class="hide"></div>
 {{page_count+1}}/{{math.ceil(problem_set.length/page_length)}}
 
 <br/>
@@ -24,10 +24,10 @@
 <button (click)="playAudio()">sound</button>
 </div>
 
-<div id='right'>
-  <img [src]="image" id='image'>
-
-  <div class='readable down' [innerHTML]="now"></div>
+<div id='right' class="hide">
+    <img [src]="image" id='image'>
+    <div class='up'>{{feedback}}<span>{{moreFeedback}}</span></div>
+    <div class='readable down' [innerHTML]="now"></div>
 </div>
 <div class=' down unreadable'  [innerHTML]="ans_key"></div>
 
