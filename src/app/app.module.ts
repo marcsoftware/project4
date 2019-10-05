@@ -12,7 +12,7 @@ import { StudyComponent } from './study/study.component';
 const appRoutes: Routes = [
   { path: 'subject/:subject', component: TypeComponent },
   { path: '', component: HomeComponent },
-  { path: 'study/', component: StudyComponent }
+  { path: 'study/:subject', component: StudyComponent }
 
 ];
 
