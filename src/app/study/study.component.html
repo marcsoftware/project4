@@ -9,7 +9,8 @@
 
 
 <div [innerHTML]="before" class='hide'></div>
-<div [innerHTML]="now" id='now'></div><br/>
+<div [innerHTML]="now" id='now' class='hide'></div><br/>
+<div  [innerHTML]="ans_key"></div>
 <input (keyup)="checkInput($event)" class='user_input'/>
 <div >{{feedback}}<span>{{moreFeedback}}</span></div>
 <div [innerHTML]="after" class="hide"></div>
