@@ -95,7 +95,7 @@ dict;
   checkInput(event: any){
     let user_input=event.target.value;
 
-    if(this.ans_key.trim()===user_input.trim()){
+    if(this.ans_key.trim().toLowerCase()===user_input.trim().toLowerCase()){
       this.correctInput(event);
     }else{
       this.colorize(user_input);
