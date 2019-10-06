@@ -1259,6 +1259,40 @@
 "くに も されず ":"ku ni mo sarezu",
 "そういう もの に ":"soo iu mono ni",
 "わたし は なりたい ":"watashi wa naritai "
+    },
+
+    "poem2":{
+      "雨にもまけず":"amenimomakezu",
+"風にもまけず":"kazenimomakezu",
+"雪にも夏の暑さにもまけぬ":"yukinimonatsunoatsusanimomakenu",
+"丈夫なからだをもち":"joobunakaradawomochi",
+"慾はなく":"yokuwanaku",
+"決して瞋らず":"kesshiteikarazu",
+"いつもしずかにわらっている":"itsumoshizukaniwaratteiru",
+"一日に玄米四合と":"ichinichinigenmaiyongooto",
+"味噌と少しの野菜をたべ":"misotosukoshinoyasaiwotabe",
+"あらゆることを":"arayurukotowo",
+"じぶんをかんじょうにいれずに":"jibunwokanjooniirezuni",
+"よくみききしわかり":"yokumikikishiwakari",
+"そしてわすれず":"soshitewasurezu",
+"野原の松の林の蔭の":"noharanomatsunohayashinokageno",
+"小さな萱ぶきの小屋にいて":"chiisanakayabukinokoyaniite",
+"東に病気のこどもあれば":"higashinibyookinokodomoareba",
+"行って看病してやり":"ittekanbyooshiteyari",
+"西につかれた母あれば":"nishinitsukaretahahaareba",
+"行ってその稲の束を負い":"ittesonoinenotabawooi",
+"南に死にそうな人あれば":"minaminishinisoonahitoareba",
+"行ってこわがらなくてもいいといい":"ittekowagaranakutemoiitoii",
+"北にけんかやそしょうがあれば":"kitanikenkayasoshoogaareba",
+"つまらないからやめろといい":"tsumaranaikarayamerotoii",
+"ひでりのときはなみだをながし":"hiderinotokiwanamidawonagashi",
+"さむさのなつはおろおろあるき":"samusanonatsuwaoro-oroaruki",
+"みんなにでくのぼうとよばれ":"minnanideku-no-bootoyobare",
+"ほめられもせず":"homeraremosezu",
+"くにもされず":"kunimosarezu",
+"そういうものに":"sooiumononi",
+"わたしはなりたい":"watashiwanaritai"
+
     }
 
 }
