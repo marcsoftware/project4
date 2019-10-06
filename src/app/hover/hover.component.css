@@ -1,0 +1,83 @@
+#now{
+  color:red;
+  display: inline;
+  padding-right:10px;
+  word-spacing: 15px;
+}
+
+div{
+  font-size:30px;
+
+}
+
+.readable{
+  color: yellow;
+  text-shadow:  -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000,
+                0px 0px 0 #000,
+                0px 1px 0 #000,
+                1px 0px 0 #000,
+                1px 1px 0 #000;
+  font-size: 40px;
+
+}
+
+span{
+  color:red;
+}
+.unreadable{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size:8px;
+}
+
+.up{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size:6px;
+
+}
+
+
+.down{
+
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+}
+
+#main{
+  width:70%;
+  margin:auto;
+  text-align: left;
+
+  float:left;
+}
+
+#hide{
+  font-size:20px;
+}
+
+img{
+ width: 100%;
+
+
+
+
+}
+
+#right{
+  width:5%;
+  float:right;
+
+  position: relative;
+  text-align: center;
+  color: white;
+
+}
+
+.hide{
+  visibility: hidden;
+}

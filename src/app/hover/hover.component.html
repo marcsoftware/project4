@@ -1,0 +1,34 @@
+
+{{subject}}
+
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div id='main'>
+
+
+
+
+<div [innerHTML]="before" class=''></div>
+<div [innerHTML]="now" id='now'></div>
+<input (keyup)="checkInput($event)" />
+
+<div [innerHTML]="after" class=""></div>
+{{page_count+1}}/{{math.ceil(problem_set.length/page_length)}}
+
+<br/>
+<button (click)="prevPage()">prev</button>
+<button (click)="nextPage()">next</button>
+<input type="checkbox" name="auto_turn" value="auto_turn" (change)='settings($event)'>auto<br>
+<input type="checkbox" name="image" value="image" (change)='settingsImage($event)'>image<br>
+<button (click)="shuffleAll()">shuffle</button>
+<button (click)="playAudio()">sound</button>
+</div>
+
+<div id='right' class="">
+    <img [src]="image" id='image'>
+    <div class='up'>{{feedback}}<span>{{moreFeedback}}</span></div>
+    <div class='readable down' [innerHTML]="now"></div>
+</div>
+<div class=' down unreadable'  [innerHTML]="ans_key"></div>
+
+
