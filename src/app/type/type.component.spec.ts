@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TypeComponent } from './type.component';
+import * as config from "./config.json";
 
 describe('TypeComponent', () => {
   let component: TypeComponent;

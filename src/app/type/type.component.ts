@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
 
-import data from '../../data/japanese.json';
+import data from '../japanese.json';
 
 @Component({
   selector: 'app-type',
